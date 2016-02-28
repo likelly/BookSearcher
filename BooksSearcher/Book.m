@@ -13,7 +13,7 @@
 - (instancetype)initWithDictionary:(NSDictionary *)dict {
     if (self = [super init]) {
         _bookID = dict[@"id"];
-        _title = dict[@"origin_title"];
+        _title = dict[@"title"];
         _author = [self firstAuthorNameFromAuthorArray:dict[@"author"]];
         _image = dict[@"image"];
     }

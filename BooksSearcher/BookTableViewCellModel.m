@@ -30,5 +30,8 @@
     return self.book.author;
 }
 
+- (NSURL *)imageUrl {
+    return self.book.image.length > 0 ? [NSURL URLWithString:self.book.image] : nil;
+}
 
 @end

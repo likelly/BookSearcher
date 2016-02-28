@@ -7,6 +7,10 @@
 //
 
 #import "BooksSearchTableViewModel.h"
+#import <BlocksKit.h>
+#import "Book.h"
+#import "BookTableViewCellModel.h"
+#import "BooksSearchService.h"
 
 @interface BooksSearchTableViewModel()
 @property (nonatomic) NSArray *cellModels;
@@ -14,14 +18,22 @@
 
 @implementation BooksSearchTableViewModel
 
-- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)(void))completion {
-    NSArray *books = @[@{@"id":@"111", @"origin_title": @"Le Petit Prince", @"author":@[@"[法] 圣埃克苏佩里"]},@{@"id":@"122", @"origin_title": @"Swift practise", @"author":@[@"some author"]}];
+- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)())completion {
+
+    [BooksSearchService searchBookWithKeyword:keyword success:^(NSArray *books) {
+        _cellModels = [books bk_map:^id(Book *book) {
+            return [[BookTableViewCellModel alloc] initWithBook:book];
+        }];
+        
+        if (completion) {
+            completion();
+        }
+    } failure:^(NSError *error) {
+        if (completion) {
+            completion();
+        }
+    }];
     
-    
-    
-    if (completion) {
-        completion();
-    }
 }
 
 @end

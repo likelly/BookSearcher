@@ -10,4 +10,6 @@
 
 @interface BooksSearchService : NSObject
 
++ (void)searchBookWithKeyword:(NSString *)keyword success:(void (^)(NSArray *books))success failure:(void (^)(NSError *error))failure;
+
 @end

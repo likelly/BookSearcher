@@ -10,6 +10,8 @@
 
 @interface BooksSearchTableViewModel : NSObject
 
-- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)(NSArray *books))completion;
+@property (nonatomic, readonly) NSArray *cellModels;
+
+- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)())completion;
 
 @end

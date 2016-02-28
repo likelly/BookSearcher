@@ -7,7 +7,15 @@
 //
 
 #import "BookTableViewCell.h"
+#import "BookTableViewCellModel.h"
+#import <SDWebImage/UIImageView+WebCache.h>
 
 @implementation BookTableViewCell
+
+- (void)configureCellWithModel:(BookTableViewCellModel *)model {
+    self.textLabel.text = [model title];
+    self.detailTextLabel.text = [model author];
+    [self.imageView sd_setImageWithURL:[model imageUrl] placeholderImage:[UIImage imageNamed:@"default"]];
+}
 
 @end

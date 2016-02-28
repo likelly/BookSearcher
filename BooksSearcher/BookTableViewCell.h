@@ -8,6 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
+@class BookTableViewCellModel;
+
 @interface BookTableViewCell : UITableViewCell
+
+- (void)configureCellWithModel:(BookTableViewCellModel *)model;
 
 @end

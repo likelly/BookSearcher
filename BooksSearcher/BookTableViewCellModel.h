@@ -16,5 +16,6 @@
 
 - (NSString *)title;
 - (NSString *)author;
+- (NSURL *)imageUrl;
 
 @end
