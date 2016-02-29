@@ -57,13 +57,4 @@
     assertThat(result, is(@"SayHi!"));
 }
 
-- (void)testThrowException {
-    NSArray *a1 = @[@"1", @"2"];
-    XCTAssertThrows(a1[4]);
-    XCTAssertThrowsSpecificNamed(a1[4], NSException, NSRangeException);
-    
-    assertThat(a1[4], throwsException(equalTo(NSRangeException)));
-}
-
-
 @end
