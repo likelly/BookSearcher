@@ -24,8 +24,13 @@
     self.tableViewModel = [[BooksSearchTableViewModel alloc] init];
 }
 - (void)searchBarSearchButtonClicked:(UISearchBar *)searchBar {
-    [self.tableViewModel searchBooksWithKeyword:searchBar.text completion:^{
-        [self.tableView reloadData];
+    [self.tableViewModel searchBooksWithKeyword:searchBar.text completion:^(NSError *error){
+        if (!error) {
+            [self.tableView reloadData];
+        } else {
+            UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"Error" message:@"Failed to search books!" preferredStyle:UIAlertControllerStyleAlert];
+            [self presentViewController:alert animated:YES completion:nil];
+        }
     }];
 }
 

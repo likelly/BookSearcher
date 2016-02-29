@@ -12,6 +12,6 @@
 
 @property (nonatomic, readonly) NSArray *cellModels;
 
-- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)())completion;
+- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)(NSError *error))completion;
 
 @end

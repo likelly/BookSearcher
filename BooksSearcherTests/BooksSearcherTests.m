@@ -14,19 +14,21 @@
 
 @implementation BooksSearcherTests
 
-- (void)setUp {
-    [super setUp];
-    // Put setup code here. This method is called before the invocation of each test method in the class.
-}
+//- (void)tearDown {
+//    // Put teardown code here. This method is called after the invocation of each test method in the class.
+//    [super tearDown];
+//}
 
-- (void)tearDown {
-    // Put teardown code here. This method is called after the invocation of each test method in the class.
-    [super tearDown];
-}
++ (void)setUp {/* Class set-up */}
++ (void)tearDown {/* Class tear-down */}
+- (void)setUp {/* Test set-up */}
+- (void)tearDown {/* Test tear-down */}
+
+- (void)testExample1 {}
+- (void)testExample2 {}
 
 - (void)testExample {
-    // This is an example of a functional test case.
-    // Use XCTAssert and related functions to verify your tests produce the correct results.
+    XCTAssertTrue(2 + 2 == 4);
 }
 
 - (void)testPerformanceExample {
@@ -37,3 +39,22 @@
 }
 
 @end
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

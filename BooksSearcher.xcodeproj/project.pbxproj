@@ -21,6 +21,14 @@
 		D28866291C82C3BC00E05A0C /* BooksSearchService.m in Sources */ = {isa = PBXBuildFile; fileRef = D28866281C82C3BC00E05A0C /* BooksSearchService.m */; };
 		D288662C1C82C8FA00E05A0C /* BookTableViewCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D288662B1C82C8FA00E05A0C /* BookTableViewCellModel.m */; };
 		D288663C1C82EBAC00E05A0C /* BooksSearcherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D288663B1C82EBAC00E05A0C /* BooksSearcherTests.m */; };
+		D28866441C83183E00E05A0C /* BookTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D28866431C83183E00E05A0C /* BookTests.m */; };
+		D28866471C831AF800E05A0C /* NSString+Append.m in Sources */ = {isa = PBXBuildFile; fileRef = D28866461C831AF800E05A0C /* NSString+Append.m */; };
+		D288664A1C831C3000E05A0C /* NSStringAppendTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D28866491C831C3000E05A0C /* NSStringAppendTests.m */; };
+		D288664D1C83641900E05A0C /* FeatureToggles.m in Sources */ = {isa = PBXBuildFile; fileRef = D288664C1C83641900E05A0C /* FeatureToggles.m */; };
+		D28866521C83F02F00E05A0C /* BookTableViewCellModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D28866511C83F02F00E05A0C /* BookTableViewCellModelTests.m */; };
+		D28866541C83F25100E05A0C /* BookTableViewModelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D28866531C83F25100E05A0C /* BookTableViewModelTests.m */; };
+		D28866561C83F56700E05A0C /* BooksSearchServiceTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D28866551C83F56700E05A0C /* BooksSearchServiceTests.m */; };
+		D288665D1C840F7C00E05A0C /* ServerAPIs.m in Sources */ = {isa = PBXBuildFile; fileRef = D288665C1C840F7C00E05A0C /* ServerAPIs.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +69,17 @@
 		D28866391C82EBAC00E05A0C /* BooksSearcherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BooksSearcherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D288663B1C82EBAC00E05A0C /* BooksSearcherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BooksSearcherTests.m; sourceTree = "<group>"; };
 		D288663D1C82EBAC00E05A0C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D28866431C83183E00E05A0C /* BookTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTests.m; sourceTree = "<group>"; };
+		D28866451C831AF800E05A0C /* NSString+Append.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSString+Append.h"; path = "../NSString+Append.h"; sourceTree = "<group>"; };
+		D28866461C831AF800E05A0C /* NSString+Append.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSString+Append.m"; path = "../NSString+Append.m"; sourceTree = "<group>"; };
+		D28866491C831C3000E05A0C /* NSStringAppendTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSStringAppendTests.m; sourceTree = "<group>"; };
+		D288664B1C83641900E05A0C /* FeatureToggles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FeatureToggles.h; sourceTree = "<group>"; };
+		D288664C1C83641900E05A0C /* FeatureToggles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FeatureToggles.m; sourceTree = "<group>"; };
+		D28866511C83F02F00E05A0C /* BookTableViewCellModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTableViewCellModelTests.m; sourceTree = "<group>"; };
+		D28866531C83F25100E05A0C /* BookTableViewModelTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookTableViewModelTests.m; sourceTree = "<group>"; };
+		D28866551C83F56700E05A0C /* BooksSearchServiceTests.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BooksSearchServiceTests.m; sourceTree = "<group>"; };
+		D288665B1C840F7C00E05A0C /* ServerAPIs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ServerAPIs.h; sourceTree = "<group>"; };
+		D288665C1C840F7C00E05A0C /* ServerAPIs.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ServerAPIs.m; sourceTree = "<group>"; };
 		F58C6F2D3DDDCD4035ACE5EB /* Pods-BooksSearcher.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksSearcher.release.xcconfig"; path = "Pods/Target Support Files/Pods-BooksSearcher/Pods-BooksSearcher.release.xcconfig"; sourceTree = "<group>"; };
 		FD60E0F5B6842EAA4C9BB3C3 /* Pods-BooksSearcherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BooksSearcherTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-BooksSearcherTests/Pods-BooksSearcherTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -133,12 +152,14 @@
 				D28866231C82C36C00E05A0C /* ViewModel */,
 				D28866191C82C2E500E05A0C /* Model */,
 				D28866261C82C39B00E05A0C /* Service */,
+				D28866581C840EE500E05A0C /* Constants */,
 				D28866021C82C25800E05A0C /* AppDelegate.h */,
 				D28866031C82C25800E05A0C /* AppDelegate.m */,
 				D28866081C82C25800E05A0C /* Main.storyboard */,
 				D288660B1C82C25800E05A0C /* Assets.xcassets */,
 				D288660D1C82C25800E05A0C /* LaunchScreen.storyboard */,
 				D28866101C82C25800E05A0C /* Info.plist */,
+				D28866481C831B0900E05A0C /* Others */,
 				D28865FF1C82C25800E05A0C /* Supporting Files */,
 			);
 			path = BooksSearcher;
@@ -204,8 +225,33 @@
 			children = (
 				D288663B1C82EBAC00E05A0C /* BooksSearcherTests.m */,
 				D288663D1C82EBAC00E05A0C /* Info.plist */,
+				D28866431C83183E00E05A0C /* BookTests.m */,
+				D28866491C831C3000E05A0C /* NSStringAppendTests.m */,
+				D28866511C83F02F00E05A0C /* BookTableViewCellModelTests.m */,
+				D28866531C83F25100E05A0C /* BookTableViewModelTests.m */,
+				D28866551C83F56700E05A0C /* BooksSearchServiceTests.m */,
 			);
 			path = BooksSearcherTests;
+			sourceTree = "<group>";
+		};
+		D28866481C831B0900E05A0C /* Others */ = {
+			isa = PBXGroup;
+			children = (
+				D28866451C831AF800E05A0C /* NSString+Append.h */,
+				D28866461C831AF800E05A0C /* NSString+Append.m */,
+				D288664B1C83641900E05A0C /* FeatureToggles.h */,
+				D288664C1C83641900E05A0C /* FeatureToggles.m */,
+			);
+			name = Others;
+			sourceTree = "<group>";
+		};
+		D28866581C840EE500E05A0C /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				D288665B1C840F7C00E05A0C /* ServerAPIs.h */,
+				D288665C1C840F7C00E05A0C /* ServerAPIs.m */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -407,14 +453,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D288664D1C83641900E05A0C /* FeatureToggles.m in Sources */,
 				D288661F1C82C31C00E05A0C /* BookTableViewCell.m in Sources */,
 				D288661C1C82C2FC00E05A0C /* Book.m in Sources */,
 				D288662C1C82C8FA00E05A0C /* BookTableViewCellModel.m in Sources */,
 				D28866221C82C34600E05A0C /* BooksSearchTableViewModel.m in Sources */,
+				D288665D1C840F7C00E05A0C /* ServerAPIs.m in Sources */,
 				D28866181C82C2D400E05A0C /* BooksSearchTableViewController.m in Sources */,
 				D28866291C82C3BC00E05A0C /* BooksSearchService.m in Sources */,
 				D28866041C82C25800E05A0C /* AppDelegate.m in Sources */,
 				D28866011C82C25800E05A0C /* main.m in Sources */,
+				D28866471C831AF800E05A0C /* NSString+Append.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -422,6 +471,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D288664A1C831C3000E05A0C /* NSStringAppendTests.m in Sources */,
+				D28866541C83F25100E05A0C /* BookTableViewModelTests.m in Sources */,
+				D28866561C83F56700E05A0C /* BooksSearchServiceTests.m in Sources */,
+				D28866441C83183E00E05A0C /* BookTests.m in Sources */,
+				D28866521C83F02F00E05A0C /* BookTableViewCellModelTests.m in Sources */,
 				D288663C1C82EBAC00E05A0C /* BooksSearcherTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

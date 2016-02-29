@@ -10,8 +10,8 @@
 #import <AFNetworking.h>
 #import <Blockskit.h>
 #import "Book.h"
+#import "ServerAPIs.h"
 
-static NSString *const BOOK_SEARCH_URL = @"https://api.douban.com/v2/book/search";
 
 @implementation BooksSearchService
 

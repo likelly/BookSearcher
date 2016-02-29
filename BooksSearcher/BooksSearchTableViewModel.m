@@ -18,7 +18,7 @@
 
 @implementation BooksSearchTableViewModel
 
-- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)())completion {
+- (void)searchBooksWithKeyword:(NSString *)keyword completion:(void (^)(NSError *error))completion {
 
     [BooksSearchService searchBookWithKeyword:keyword success:^(NSArray *books) {
         _cellModels = [books bk_map:^id(Book *book) {
@@ -26,11 +26,11 @@
         }];
         
         if (completion) {
-            completion();
+            completion(nil);
         }
     } failure:^(NSError *error) {
         if (completion) {
-            completion();
+            completion(error);
         }
     }];
     
