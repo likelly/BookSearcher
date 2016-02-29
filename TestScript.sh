@@ -1,0 +1,1 @@
+xcodebuild clean test -workspace BooksSearcher.xcworkspace -scheme BooksSearcherTests -configuration Debug -destination 'platform=iOS Simulator,name=iPhone 6,OS=9.1'
